@@ -23,7 +23,7 @@ promoRouter.route('/')
 })
 .delete((req, res, next) => {
     res.end('Deleting all the promotions!');
-})
+});
 
 promoRouter.route('/:promoId')
 .all((req, res, next) => {
