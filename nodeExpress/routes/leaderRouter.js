@@ -44,6 +44,6 @@ leaderRouter.route('/:leaderId')
 })
 .delete((req, res, next) => {
     res.end("Deleting leader: " + req.params.leaderId);
-})
+});
 
 module.exports = leaderRouter;

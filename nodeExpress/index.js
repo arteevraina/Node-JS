@@ -14,13 +14,9 @@ app.use(morgan('dev'));  //app uses morgan in development
 app.use(bodyParser.json());
 
 app.use('/dishes', dishRouter);
-app.use('/dishes/:dishId', dishRouter);
-
 app.use('/promotions', promoRouter);
-app.use('/promotions/:promoId', promoRouter);
-
 app.use('/leadership', leaderRouter);
-app.use('/leadership/:leaderId', leaderRouter);
+
 
 app.use(express.static(__dirname + '/public'));
 
