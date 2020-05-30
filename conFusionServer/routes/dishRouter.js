@@ -112,7 +112,7 @@ dishRouter.route('/:dishId/comments')
                 dish.save()
                 .then((dish) => {
                     Dishes.findById(dish._id)
-                        .populate('comments-author')
+                        .populate('comments.author')
                         .then((dish) => {
                             res.statusCode = 200;
                             res.setHeader('Content-Type', 'application/json');
